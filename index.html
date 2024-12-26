@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header section  -->
+<header class="header">
+    <a href="#home" class="logo"> Amirah </a>
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="Search here" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+</header>
+
+<!-- navbar section  -->
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#team">Team</a>
+    <a href="#arrivals">Arrivals</a>
+    <a href="#blogs">Blogs</a>
+</nav>
+
+<!-- home section  -->
+<section class="home" id="home">
+    <div class="slide active">
+        <div class="content">
+            <img src="https://cdn.pixabay.com/photo/2019/12/29/08/39/women-4726516_960_720.jpg">
+            <span>New Arrivals 2024</span>
+            <h3>Cosmetics</h3>
+            <a href="#" class="btn">Read More</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://cdn.pixabay.com/photo/2019/12/29/08/39/women-4726516_960_720.jpg">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="https://cdn.pixabay.com/photo/2023/05/08/05/53/purse-7977728_1280.png">
+            <span>New Arrivals 2024</span>
+            <h3>Accessories</h3>
+            <a href="#" class="btn">Read More</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://cdn.pixabay.com/photo/2023/05/08/05/53/purse-7977728_1280.png">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="https://images.pexels.com/photos/7795789/pexels-photo-7795789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <span>New Collections</span>
+            <h3>Skin Care</h3>
+            <a href="#" class="btn">Read More</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://images.pexels.com/photos/7795789/pexels-photo-7795789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+    </div>
+</section>
+
+<!-- category section  -->
+<section class="category">
+    <a href="#" class="box">
+        <img src="https://images.pexels.com/photos/11935643/pexels-photo-11935643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <p>Cosmetics</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://images.pexels.com/photos/2721977/pexels-photo-2721977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <p>Makeup</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://images.pexels.com/photos/7290709/pexels-photo-7290709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <p>Powder</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://images.pexels.com/photos/9775326/pexels-photo-9775326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <p>Lotions</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://images.pexels.com/photos/1625037/pexels-photo-1625037.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <p>Lipsticks</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="https://images.pexels.com/photos/29899575/pexels-photo-29899575/free-photo-of-luxurious-ysl-makeup-display-on-soft-fabric.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <p>Mascara</p>
+    </a>
+</section>
+
+<!-- about section  -->
+<section class="about" id="about">
+    <div class="content">
+        <span>Why choose Amirah?</span>
+        <h3>Makeup makes difference</h3>
+        <p>At Amirah, we believe that beauty is personal and should be embraced by everyone. Founded with a passion for empowering individuals, we offer a diverse range of premium cosmetics and skincare products that cater to every unique style and skin type. Our mission is simple: to provide high-quality, innovative products that inspire confidence and self-expression. Whether you’re a beauty novice or a seasoned expert, we aim to be your trusted partner on your beauty journey.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+
+<!-- shop section  -->
+<section class="shop" id="shop">
+    <div class="heading">
+        <h1>Featured Products</h1>
+        <p>Check out the most used products, selected by our customers.</p>
+    </div>
+    <div class="swiper products-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="https://lofioriginal.com/cdn/shop/files/PowerGripDewySettingSpray.jpg?v=1713617090&width=823">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Setting Spray</p>
+                    <div class="price">$3.99 <span>$8.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-20%</span>
+                    <img src="https://lofioriginal.com/cdn/shop/products/Crystal.png?v=1699859966&width=823">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lip Gloss</p>
+                    <div class="price">$5.49 <span>$9.49</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="https://lofioriginal.com/cdn/shop/files/Original50ml.jpg?v=1717067720&width=823">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hair Spray</p>
+                    <div class="price">$19.99 <span>$29.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="https://lofioriginal.com/cdn/shop/files/FairWarm.jpg?v=1697959100&width=823">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Concealer</p>
+                    <div class="price">$12.99 <span>$16.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="https://lofioriginal.com/cdn/shop/files/PowerMistBerryBliss2.jpg?v=1714892181&width=823">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Hand Sanitizer</p>
+                    <div class="price">$23.19 <span>$30.19</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="https://lofioriginal.com/cdn/shop/files/1.jpg?v=1698044988&width=823">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Face Cream</p>
+                    <div class="price">$8.99 <span>$13.99</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- gallery section starts  -->
+<section class="gallery" id="gallery">
+    <div class="heading">
+        <h1>Our Gallery</h1>
+        <p>Check out our product gallery.</p>
+    </div>
+    <div class="lightbox">
+        <a href="https://rubirubimakeup.wordpress.com/wp-content/uploads/2017/03/img_0141all-of-the-makeup.jpg?w=433&h=341"><img src="https://rubirubimakeup.wordpress.com/wp-content/uploads/2017/03/img_0141all-of-the-makeup.jpg?w=433&h=341"></a>
+        <a href="https://assets.vogue.com/photos/66c4ddb6af534d1a47c38d02/3:4/w_640,c_limit/Best%20Products_Slides_0006_oribe.jpg"><img src="https://assets.vogue.com/photos/66c4ddb6af534d1a47c38d02/3:4/w_640,c_limit/Best%20Products_Slides_0006_oribe.jpg"></a>
+        <a href="https://assets.vogue.com/photos/668f2b94957cd09cda622675/3:4/w_640,c_limit/Amazon%20Prime%20Day_Slidesx_0031_Beauty%20of%20Joseon%20Glow%20Serum_Kiana.jpg"><img src="https://assets.vogue.com/photos/668f2b94957cd09cda622675/3:4/w_640,c_limit/Amazon%20Prime%20Day_Slidesx_0031_Beauty%20of%20Joseon%20Glow%20Serum_Kiana.jpg"></a>
+        <a href="https://static-assets.business.amazon.com/assets/in/3rd-june-24/mkp15.png.transform/width-2216/image.jpg"><img src="https://static-assets.business.amazon.com/assets/in/3rd-june-24/mkp15.png.transform/width-2216/image.jpg"></a>
+        <a href="https://static-assets.business.amazon.com/assets/in/3rd-june-24/mkp4.png.transform/width-2216/image.jpg"><img src="https://static-assets.business.amazon.com/assets/in/3rd-june-24/mkp4.png.transform/width-2216/image.jpg"></a>
+        <a href="https://static-assets.business.amazon.com/assets/in/3rd-june-24/mkp13.png.transform/width-2216/image.jpg"><img src="https://static-assets.business.amazon.com/assets/in/3rd-june-24/mkp13.png.transform/width-2216/image.jpg"></a>
+    </div>
+</section>
+
+<!-- arrivals section starts  -->
+<section class="arrivals" id="arrivals">
+
+    <div class="heading">
+        <h1>New Arrivals</h1>
+        <p>Get your hands on these new winter arrivals. Get them before these solds out.</p>
+    </div>
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/66c504a9ba2a1d204c453589/3:4/w_640,c_limit/Slide%20(16).jpg">
+                </div>
+                <div class="content">
+                    <p>Skin Mist</p>
+                    <div class="price">$185 <span>$200</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/66c4ddb7abf46210d14534e7/3:4/w_640,c_limit/Best%20Products_Slides_0012_escentric.jpg">
+                </div>
+                <div class="content">
+                    <p>Escentric Molecules</p>
+                    <div class="price">$160 <span>$168</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/65e221fd2bdb64cd571f9131/3:4/w_640,c_limit/image1.jpg">
+                </div>
+                <div class="content">
+                    <p>Hair Conditioner</p>
+                    <div class="price">$24 <span>$29</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/6465052c406cf236781d3ed1/3:4/w_640,c_limit/slide_10.jpg">
+                </div>
+                <div class="content">
+                    <p>Sun Shield Glow</p>
+                    <div class="price">$39 <span>$49</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/65e221ff0b652c5ec3331f07/3:4/w_640,c_limit/image13.jpg">
+                </div>
+                <div class="content">
+                    <p>Mascara</p>
+                    <div class="price">$13 <span>$16</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/65e2220143493000d34f3d81/3:4/w_640,c_limit/image19.jpg">
+                </div>
+                <div class="content">
+                    <p>Buff Brush</p>
+                    <div class="price">$40 <span>$45</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/66c4e384063d043193170bb1/3:4/w_640,c_limit/Best%20Products_Slides2.jpg">
+                </div>
+                <div class="content">
+                    <p>Body Lotion</p>
+                    <div class="price">$85 <span>$92</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="https://assets.vogue.com/photos/65e22201e6dbaaf097a21de3/3:4/w_640,c_limit/image20.jpg">
+                </div>
+                <div class="content">
+                    <p>Lip Balm</p>
+                    <div class="price">$24 <span>$30</span></div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- reviews section  -->
+<section class="reviews">
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="https://img.freepik.com/premium-vector/vector-girl-wearing-niqab_917710-41.jpg">
+                    <div class="info">
+                        <h3>Maeesha Ishrat</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">The body lotion which i bought last week, was the best purchase I've done this month. That was amazing. My skin is moist and soft.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="https://img.lovepik.com/element/45009/2983.png_860.png">
+                    <div class="info">
+                        <h3>Israt Jahan</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Awesome make-up products you got. Though the prices are a bit much, but nonetheless you deliever quality. These products are soo nice on my skin, I am in such a awe.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="https://i.pinimg.com/474x/f4/48/58/f44858fc48674e581351bfb381b170cd.jpg">
+                    <div class="info">
+                        <h3>Tanjila Hussen</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Your perfumes collection are quite good. I especially liked the latest winter collection. They fragrance is good, nice to my nose. And also that rose shampoo, that was great.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- service section  -->
+<section class="service">
+    <div class="box">
+        <img src="https://t4.ftcdn.net/jpg/02/27/73/93/360_F_227739395_BhszneMcufcAe9DJEBTHFFxVJM1PR8RT.jpg">
+        <h3>free shipping</h3>
+        <p>We deliever free of service domestically.</p>
+    </div>
+
+    <div class="box">
+        <img src="https://logowik.com/content/uploads/images/secure-payment2785.jpg">
+        <h3>secure payment</h3>
+        <p>Your payment is secure with us.</p>
+    </div>
+
+    <div class="box">
+        <img src="https://t3.ftcdn.net/jpg/04/43/98/24/360_F_443982441_rBudWjP3eXwZ20EAZhvIWNLx4jDr1kup.jpg">
+        <h3>24 hours support</h3>
+        <p>Our helpline is available 24 hours. If you have any complaints, do call us.</p>
+    </div>
+</section>
+
+<!-- footer section starts  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+            <a class="link" href="#team"> <i class="fas fa-angle-right"></i> team</a>
+            <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> arrivals</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my order </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> private policy </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +(123)-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> contact@amirah.com </p>
+            <p> <i class="fas fa-map"></i> Amirah Outlet, Sylhet </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="credit"> created by <a href="https://github.com/mishal948" target="blank"><i class="fab fa-github"></i><span>Tahera</span></a> | © Amirah 2024 </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+</body>
+</html>
